@@ -1,5 +1,11 @@
 # socket2-libc-align-demo
 
+**Solved!** Just needed to set `gen_buildrs = true`. [Thanks, @faern!][1]
+
+[1]: https://github.com/rust-lang/socket2-rs/issues/130#issuecomment-726741410
+
+## Previous contents, for posterity
+
 As of `socket2==0.3.16`, building with Bazel hits an issue fixed by
 `--cfg=libc_align`:
 
